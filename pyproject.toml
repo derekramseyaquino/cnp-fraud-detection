@@ -1,7 +1,7 @@
 [project]
 name = "cnp-fraud-detection"
 version = "0.1.0"
-description = "Building a card-not-present fraud model."
+description = "Card-not-present fraud detection model with time-based validation and cost-based thresholds"
 readme = "README.md"
 authors = [
     { name = "Derek Ramsey-Aquino", email = "derek.ramseyaquino@gmail.com" }
