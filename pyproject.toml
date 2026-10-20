@@ -1,7 +1,7 @@
 [project]
 name = "cnp-fraud-detection"
 version = "0.1.0"
-description = "Add your description here"
+description = "Building a card-not-present fraud model."
 readme = "README.md"
 authors = [
     { name = "Derek Ramsey-Aquino", email = "derek.ramseyaquino@gmail.com" }
@@ -10,11 +10,7 @@ requires-python = ">=3.14"
 dependencies = [
     "pandas>=3.0.6",
     "pyarrow>=26.0.0",
-    "pytest>=9.1.1",
 ]
-
-[project.scripts]
-cnp-fraud-detection = "cnp_fraud_detection:main"
 
 [build-system]
 requires = ["uv_build>=0.13.3,<0.14.0"]
@@ -23,3 +19,8 @@ build-backend = "uv_build"
 [tool.uv.build-backend]
 module-root = "src"
 module-name = "fraud"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
